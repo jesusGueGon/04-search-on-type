@@ -1,0 +1,49 @@
+<input
+  type="text"
+  [placeholder]="placeholder"
+  class="form-control"
+  [value]="initialValue"
+  (keyup)="onKeyPress(txtInput.value)"
+  #txtInput
+>
+
+<hr>
+
+<ul class="list-group">
+  <!-- <li routerLink="home"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    Home Page
+  </li>
+  <li routerLink="about"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    About Page
+  </li>
+  <li routerLink="contact"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    About Page
+  </li> -->
+  <li routerLink="universidades/by-spain"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    España
+  </li>
+  <li routerLink="universidades/by-unitedkingdom"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    Reino Unido
+  </li>
+  <li routerLink="universidades/by-portugal"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    Portugal
+  </li>
+</ul>

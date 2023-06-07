@@ -1,0 +1,13 @@
+<div *ngIf="universities.length === 0; else table" class="alert alert-warning text-center">
+  No hay países que mostrar
+</div>
+
+<ng-template #table>
+  <table class="table table-hover border">
+    <tbody>
+      <tr *ngFor="let university of universities; let i = index" >
+        <td>{{ university.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
